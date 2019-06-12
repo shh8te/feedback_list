@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import avatarErrorStub from "../../../../../assets/img/avatarErrorStub.png";
+import avatarStub from "../../../../../assets/img/avatarStub.png";
 class Avatar extends Component {
   state = {
     imageStatus: "loading"
@@ -22,11 +23,7 @@ class Avatar extends Component {
     if (this.props.data.author.avatar) {
       switch (this.state.imageStatus) {
         case "failed":
-          return (
-            <Img
-              src={require("../../../../../assets/img/avatarErrorStub.jpg")}
-            />
-          );
+          return <Img src={avatarErrorStub} />;
         default:
           return (
             <Img
@@ -38,7 +35,7 @@ class Avatar extends Component {
       }
     }
 
-    return <Img src={require("../../../../../assets/img/avatarStub.png")} />;
+    return <Img src={avatarStub} />;
   };
 
   render() {
