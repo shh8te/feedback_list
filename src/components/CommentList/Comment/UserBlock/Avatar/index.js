@@ -23,7 +23,9 @@ class Avatar extends Component {
 			switch (this.state.imageStatus) {
 				case "failed":
 					return (
-						<Img src={require("../../../../../img/avatarErrorStub.jpg")} />
+						<Img
+							src={require("../../../../../assets/img/avatarErrorStub.jpg")}
+						/>
 					);
 				default:
 					return (
@@ -36,7 +38,7 @@ class Avatar extends Component {
 			}
 		}
 
-		return <Img src={require("../../../../../img/avatarStub.png")} />;
+		return <Img src={require("../../../../../assets/img/avatarStub.png")} />;
 	};
 
 	render() {
