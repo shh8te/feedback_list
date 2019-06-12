@@ -1,4 +1,4 @@
-To run app locally:
+To run this app locally:
 
 1. Start the JSON-server: json-server --watch feedbacks.json --port 3004
 2. Start the app: npm start
