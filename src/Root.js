@@ -4,13 +4,13 @@ import store from "./store";
 import App from "./App";
 
 class Root extends Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<App />
-			</Provider>
-		);
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
+  }
 }
 
 export default Root;

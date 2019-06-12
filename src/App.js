@@ -6,30 +6,30 @@ import "normalize.css";
 import styled from "styled-components";
 
 class App extends Component {
-	render() {
-		return (
-			<AppWrapper>
-				<CommentList />
-			</AppWrapper>
-		);
-	}
+  render() {
+    return (
+      <AppWrapper>
+        <CommentList />
+      </AppWrapper>
+    );
+  }
 
-	componentDidMount() {
-		this.props.loadData(this.props.lastFilterItem, this.props.filterStep);
-	}
+  componentDidMount() {
+    this.props.loadData(this.props.lastFilterItem, this.props.filterStep);
+  }
 }
 
 export default connect(
-	state => ({
-		lastFilterItem: state.lastFilterItem,
-		filterStep: state.filterStep
-	}),
-	{ loadData }
+  state => ({
+    lastFilterItem: state.lastFilterItem,
+    filterStep: state.filterStep
+  }),
+  { loadData }
 )(App);
 
 const AppWrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #fafaf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafaf9;
 `;
