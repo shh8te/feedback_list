@@ -9,41 +9,25 @@ const Title = props => {
 			case 0:
 				return "";
 			case 1:
-				return <FontAwesomeIcon icon={faStar} color="#63d99c" />;
+				return Array.from(Array(1), (val, index) => index).map(item => (
+					<FontAwesomeIcon icon={faStar} color="#63d99c" />
+				));
 			case 2:
-				return (
-					<>
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-					</>
-				);
+				return Array.from(Array(2), (val, index) => index).map(item => (
+					<FontAwesomeIcon icon={faStar} color="#63d99c" />
+				));
 			case 3:
-				return (
-					<>
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-					</>
-				);
+				return Array.from(Array(3), (val, index) => index).map(item => (
+					<FontAwesomeIcon icon={faStar} color="#63d99c" />
+				));
 			case 4:
-				return (
-					<>
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-					</>
-				);
+				return Array.from(Array(4), (val, index) => index).map(item => (
+					<FontAwesomeIcon icon={faStar} color="#63d99c" />
+				));
 			case 5:
-				return (
-					<>
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-						<FontAwesomeIcon icon={faStar} color="#63d99c" />
-					</>
-				);
+				return Array.from(Array(5), (val, index) => index).map(item => (
+					<FontAwesomeIcon icon={faStar} color="#63d99c" />
+				));
 			default:
 				return "";
 		}

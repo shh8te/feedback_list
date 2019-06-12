@@ -6,8 +6,8 @@ import dayjs from "dayjs";
 const UserBlock = props => {
 	const getPostTime = () => {
 		return props.data.updated_at
-			? props.data.updated_at
-			: props.data.created_at;
+			? dayjs(props.data.updated_at).format("DD/MM/YYYY")
+			: dayjs(props.data.created_at).format("DD/MM/YYYY");
 	};
 
 	return (
@@ -17,7 +17,7 @@ const UserBlock = props => {
 					<Avatar data={props.data} />
 					<Text>
 						<UserName>{props.data.author.name}</UserName>
-						<PostTime>{dayjs(getPostTime()).format("DD/MM/YYYY")}</PostTime>
+						<PostTime>{getPostTime()}</PostTime>
 					</Text>
 				</>
 			}

@@ -22,7 +22,7 @@ const Statistics = props => {
 			<Activity>
 				{dayjs(props.data.last_activity_at).format("DD/MM/YYYY")}
 			</Activity>
-			<Comment>Kommentieren</Comment>
+			<Comment>Comment</Comment>
 		</Wrapper>
 	);
 };
