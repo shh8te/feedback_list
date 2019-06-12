@@ -10,6 +10,4 @@ const store = createStore(
 	applyMiddleware(thunkMiddleware, loggerMiddleware)
 );
 
-window.store = store;
-
 export default store;
